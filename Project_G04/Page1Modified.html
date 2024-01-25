@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<link rel="stylesheet" href="Page1Modified.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <ul>
+      <li><a href="#">home</a></li>
+      <li><a href="pageTwo.html">schedule</a></li>
+      <li><a href="#buy_tickets_nav">buy tickets</a></li>
+      <li><a href="#footer">contact</a></li>
+    </ul>
+  </header>
+<div id="Bigdiv">
+        <div class="imgdiv">
+        <div class="blurrystart">
+            <img src="https://dancingastronaut.com/wp-content/uploads/2021/03/Tomorrowland-1.jpg" class="image">
+        </div>
+    </div>
+    <div  class="Thirdofpage" id="Description" style="height: 35vh;">
+        <!-- <h1 style="font-family: 'Lemon', serif; color: #d1bc34;">TommorowLand</h1>
+        <p style="font-weight: bold; color: white;"> Dates Available : </p>
+        <div class="horizontal">
+            <p>28th January</p>
+        <p> 2nd february</p> -->
+        <!-- </div >
+        <div class="horizontal">
+        <p>Marseille, France</p>
+        <p>Frankfurt, Germany</p>
+    </div> -->
+    <div class="festholder">
+    <img src="https://economictimes.indiatimes.com/thumb/msid-102023530,width-1200,height-900,resizemode-4,imgsize-159606/tomorrowland-2023-main-stage-heres-all-you-need-to-know-about-arcadiana.jpg?from=mdr" alt="" class="Festival" id="CLickable">
+    <div style="margin-left: 25px;">
+        <p class="Cname" id="Clickable">The Great Library of Tomorrow</p>
+        <div style="display: flex; flex-direction: row; align-items: center;">
+        <ion-icon name="calendar-outline" style="margin-bottom: 20px;"></ion-icon>
+        <p class="addinf">December 2023 - March 2024</p>
+         </div>
+         <div style="display: flex; flex-direction: row; align-items: center;">
+            <ion-icon name="location-outline" style="margin-bottom: 20px;"></ion-icon>
+            <p class="addinf">Passeig de Picasso Barcelona - spain</p>  
+             </div>
+    </div>
+    </div>
+    
+    </div>
+
+    <nav id="buy_tickets_nav"> <h1 style="color: white; font-family: 'Noto Sans', sans-serif; margin-top: 100px;text-align: center;" >Buy Tickets Here !</h1>
+    <div class="Thirdofpage" style="background:linear-gradient( #0B60B0, #F0EDCF);display: flex;flex-direction: row; justify-content: space-evenly;height: 60vh;">
+        
+    <div class="Ticket">
+        <ion-icon name="ticket-outline" style="font-size: 70px; margin-top: 0px;"></ion-icon>
+        <h3 style="font-size: 20px; margin-top: 10px;">One Day Pass</h3>
+        <h1 style="font-size: 45px; margin-top: -18px;">30$</h1>
+        <div class="extraticketinfo">
+            <ion-icon name="star-half-outline"></ion-icon>
+            <p style="margin-left: 10px;">First Edition !</p>
+        </div>
+        <div class="extraticketinfo">
+            <ion-icon name="star-half-outline"></ion-icon>
+            <p style="margin-left: 10px;">An Immersive Experience
+                for all</p>
+            
+
+        </div>
+        <div class="extraticketinfo">
+            <ion-icon name="star-half-outline"></ion-icon>
+            <p style="margin-left: 10px;"> Premiere of a brand-new CORE!</p>
+            
+
+        </div>
+        <button style=" margin-top: auto px; margin-bottom: 0px; font-family: Noto Sans,Arial,sans serif" class="PurchaseT" id="PayTicket1"> Purchase your Ticket</button>
+    </div>
+    <div class="Ticket">
+        <ion-icon name="musical-notes-outline" style="font-size: 70px; margin-top: 0px;"></ion-icon>
+        <h3 style="font-size: 20px; margin-top: 10px;"> Full Festival Pass </h3>
+        <h1 style="font-size: 45px; margin-top: -18px;">75$</h1>
+        <div class="extraticketinfo">
+            <ion-icon name="star-half-outline"></ion-icon>
+            <p style="margin-left: 10px;">In Barcelona !</p>
+        </div>
+        <div class="extraticketinfo">
+            <ion-icon name="star-half-outline"></ion-icon>
+            <p style="margin-left: 10px;"> Dive into the Future ! </p>
+            
+
+        </div>
+        <div class="extraticketinfo">
+            <ion-icon name="star-half-outline"></ion-icon>
+            <p style="margin-left: 10px;">Unforgettable VR Adventure !</p>
+            
+
+        </div>
+        <button style=" margin-top: auto px; margin-bottom: 0px;font-family: Noto Sans,Arial,sans serif ;" class="PurchaseT" id="PayTicket2"> Purchase your Ticket</button>
+    </div>
+    </div></nav>
+   
+    <!-- <div class="Thirdofpage" style="display: flex; flex-direction: row;">
+        <div class="Mapdiv">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.194149113214!2d2.1718273154792636!3d41.39329497926208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4983c3dd98d17%3A0xb5f1d3c6e9b46e69!2sPla%C3%A7a%20Catalunya!5e0!3m2!1sen!2sus!4v1642487399631!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+        <div class="Mapdiv">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.194149113214!2d2.1718273154792636!3d41.39329497926208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4983c3dd98d17%3A0xb5f1d3c6e9b46e69!2sPla%C3%A7a%20Catalunya!5e0!3m2!1sen!2sus!4v1642487399631!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+    </div> -->
+    <div class="Thirdofpage" style="display: flex; flex-direction: row; border-width: 0px; margin-top: 40px;">
+        <div class="Mapandtext">
+        <div class="Mapdiv" id="map1">
+            
+        </div>
+        <p>Passeig de Picasso,  Ciutat Vella - Barcelona</p>
+    </div>
+    
+    
+    </div>
+
+    <footer id="footer">
+        <div class="footer_container">
+          <p class="copyright">&copy; Tomorrowland. All Rights Reserved.</p>
+          <div class="icons">
+            <ion-icon name="logo-facebook" class="social_media"></ion-icon>
+            <ion-icon name="logo-instagram" class="social_media"></ion-icon>
+            <ion-icon name="logo-twitter" class="social_media"></ion-icon>
+          </div>
+        </div>
+      </footer>
+    <script>
+        
+        var map1 = L.map('map1').setView([41.389048, 2.185585], 14);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map1);
+        L.marker([41.389048, 2.185585]).addTo(map1);
+
+        const Payup = () => {
+            window.location.href = "Ticket2.html";
+
+        }   
+        const PayupTwo = () => {
+            window.location.href = "Ticket.html";
+
+        }   
+        document.getElementById("PayTicket1").addEventListener("click",Payup)
+        document.getElementById("PayTicket2").addEventListener("click",PayupTwo)
+        const secondpage = () => {
+            window.location.href = "pageTwo.html";
+        }
+        document.getElementById("CLickable").addEventListener("click",secondpage)
+        document.getElementById("Clickable").addEventListener("click",secondpage)
+
+        </script>
+</body>
+</html>

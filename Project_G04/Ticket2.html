@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Ticket.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Fira+Sans+Condensed:wght@300&family=IBM+Plex+Mono:wght@200&family=Lemon&family=Noto+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="Page1Modified.html">home</a></li>
+        <li><a href="./tomorrow Land/pageTwo.html">schedule</a></li>
+        <li><a href="Page1Modified.html#buy_tickets_nav">buy tickets</a></li>
+        <li><a href="">contact</a></li>
+      </ul>
+    </header>
+    <main>
+      <h2>Buy Tickets</h2>
+
+      <form>
+        <h2 style="text-align: center">One Day Pass</h2>
+        <h1 style="text-align: center">$30</h1>
+
+        <label for="name">First Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="name">Last Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="quantity">Number of Tickets:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required />
+
+        <label for="creditCard">Card Details:</label>
+        <input
+          type="text"
+          id="creditCard"
+          name="creditCard"
+          placeholder="XXXX-XXXX-XXXX-XXXX"
+          required
+        />
+
+        <button type="submit">Buy Tickets</button>
+      </form>
+    </main>
+
+    <footer>
+      <div class="footer_container">
+        <p class="copyright">&copy; Tomorrowland. All Rights Reserved.</p>
+        <div class="icons">
+          <ion-icon name="logo-facebook" class="social_media"></ion-icon>
+          <ion-icon name="logo-instagram" class="social_media"></ion-icon>
+          <ion-icon name="logo-twitter" class="social_media"></ion-icon>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
